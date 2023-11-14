@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="ferrari-logon.ico" type="image/x-icon">
+  <title>Ferrari</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #F1F1F1;
+          text-align: center;
+      }
+      header {
+          background-color: #81031d;
+          color: white;
+          padding: 20px;
+      }
+      h1 {
+          font-size: 36px;
+      }
+      p {
+          font-size: 18px;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  </style>
+  <body style="background-image: url(Ferrari\ 488\ GTB-min.jpg);">
+    <header>
+      <h2 style ="color:rgb(255, 255, 255);text-align:center;">Ferrari 488</h2>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <br><br><br>
+            <li><a href="index.html"><img src="ferrari_logo_icon_145829-removebg-preview.png" >Pagina inicial</a></li>
+            <br><br><br>
+            <li><a href="ferrari488.html"><img src="ferrari-488.jpg" >488</a></li>
+            <br><br><br>
+            <li><a href="ferrarif40.html"><img src="Ferrari F40.jpg" >F40</a></li>
+            <br><br><br>
+            <li><a href="ferrarisf90.html"><img src="Ferrari-SF90.jpg" >SF90</a></li>
+        </ul>
+    </header>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MLnjw0cliag?si=PWzd5VhFdLdr0m9l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <script>
+        function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        var content = document.querySelector('.content');
+        menu.style.width = menu.style.width === '150px' ? '0' : '150px';
+        content.style.marginLeft = content.style.marginLeft === '150px' ? '0' : '150px';
+}
+    </script>  
+    <p style ="color:rgb(255, 255, 255);text-align:center;">Combustível:	Gasolina</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Cilindrada:	3902 cm3 / 238.1 cu-in</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Motor: V8</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Potência:	670 PS / 661 HP / 493 kW</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Binário:	760 Nm / 560 lb-ft </p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Velocidade Máxima:	>330 km/h / - Mph</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Consumos Misto:	11.4 L/100 km </p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">25 MPG UK</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">21 MPG US </p>
+</body>

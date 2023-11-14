@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="ferrari-logon.ico" type="image/x-icon">
+    <title>Ferrari</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F1F1F1;
+            text-align: center;
+        }
+        header {
+            background-color: #81031d;
+            color: white;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        </style>
+</head>
+<body style="background-image: url(ferraribackground.jpg);">
+    <header>
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    
+        <div class="menu">
+            <ul>
+                <br><br><br>
+                <li><a href="https://www.instagram.com/ferrari/"target="_blank"><img src="images-removebg-preview-removebg-preview.png" >Instagram</a></li>
+                <br><br><br>
+                <li><a href="https://store.ferrari.com/en-pt?gclid=Cj0KCQiAjMKqBhCgARIsAPDgWlywP_N8GDqXkfNwoYV3jckaN5ZKRSwKIEuVYUPeMqJYUsFPe8Sl7hsaAgpkEALw_wcB"target="_blank"><img src="shop-removebg-preview.png" >Shop</a></li>
+                <br><br><br>
+                <li><a href="https://lisboa.ferraridealers.com/en-GB/"target="_blank"><img src="ferras_logo_site_ofici-removebg-preview (1).png">Site Oficial</a></li>
+                <li><a href="formulario.html"target="_blank"><img src="formulario-removebg-preview (1).png">formulário</a></li>
+            </ul>
+        </div>
+      <h2 style ="color:rgb(255, 255, 255);text-align:center;"><img src="ferrari_logo_icon_145829-removebg-preview.png" width="75" height="75"></h2>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">Paixão e desempenho automotivo</p>
+    </header>
+    <h2 style ="color:rgb(255, 255, 255);text-align:center;">História da Ferrari</h2>
+    <p style ="color:rgb(255, 255, 255);text-align:center;">A Ferrari é uma renomada fabricante italiana de carros esportivos de luxo fundada por Enzo Ferrari em 1939.</p>
+
+    <h2 style ="color:rgb(255, 255, 255);text-align:center;">Alguns modelos populares</h2>
+    <p style ="color:rgb(255, 255, 255);text-align:center;">Alguns dos modelos populares da Ferrari incluem o Ferrari 488, Ferrari SF90 e Ferrari F40.</p>
+    <div>
+     <a href="ferrari488.html"><img src="ferrari-488.jpg" alt="Ferrari 488" width="300" height="300" class="imagens_zoom"></a>
+     <a href="ferrarisf90.html"> <img src="Ferrari-SF90.jpg" alt="Ferrari SF90" width="300" height="300" class="imagens_zoom"></a>
+     <a href="ferrarif40.html"><img src="Ferrari F40.jpg" alt="Ferrari F40" width="300" height="300" class="imagens_zoom"></a>
+    </div>
+    <h2 style ="color:rgb(255, 255, 255);text-align:center;">Localização</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2844.145671191021!2d10.86191657545662!3d44.532649795110174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fe3a75a0699a7%3A0xb1a1e710282361ef!2sFerrari%20Factory!5e0!3m2!1spt-PT!2spt!4v1699482037131!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <script>
+        function smoothScroll(target) {
+            const targetElement = document.querySelector(target);
+            const targetPosition = targetElement.offsetTop;
+            const startPosition = window.pageYOffset;
+            const distance = targetPosition - startPosition;
+            const duration = 2000;
+            let startTime;
+  
+            function animation(currentTime) {
+                if (!startTime) startTime = currentTime;
+                const progress = currentTime - startTime;
+                const easing = easeInOutCubic(progress, startPosition, distance, duration);
+                window.scrollTo(0, easing);
+                if (progress < duration) requestAnimationFrame(animation);
+            }
+  
+            function easeInOutCubic(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t * t + b;
+                t -= 2;
+                return c / 2 * (t * t * t + 2) + b;
+            }
+            requestAnimationFrame(animation);
+        }
+    </script>
+    <script>
+        function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        var content = document.querySelector('.content');
+        menu.style.width = menu.style.width === '150px' ? '0' : '150px';
+        content.style.marginLeft = content.style.marginLeft === '200px' ? '0' : '200px';
+}
+    </script>
+</body>
+</html>

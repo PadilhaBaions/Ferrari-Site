@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="ferrari-logon.ico" type="image/x-icon">
+  <title>Ferrari</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #F1F1F1;
+          text-align: center;
+      }
+      header {
+          background-color: #81031d;
+          color: white;
+          padding: 20px;
+      }
+      h1 {
+          font-size: 36px;
+      }
+      p {
+          font-size: 20px;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  </style>
+  <body style="background-image: url(f40.jpg);">
+    <header>
+      <h2 style ="color:rgb(255, 255, 255);text-align:center;">Ferrari F40</h2>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <br><br><br>
+            <li><a href="index.html"><img src="ferrari_logo_icon_145829-removebg-preview.png" >Pagina inicial</a></li>
+            <br><br><br>
+            <li><a href="ferrari488.html"><img src="ferrari-488.jpg" >488</a></li>
+            <br><br><br>
+            <li><a href="ferrarif40.html"><img src="Ferrari F40.jpg" >F40</a></li>
+            <br><br><br>
+            <li><a href="ferrarisf90.html"><img src="Ferrari-SF90.jpg" >SF90</a></li>
+        </ul>
+    </header>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ti9EfwUMbpA?si=EPUomNMMrYkr66PE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <body>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">
+    Combustível:	Gasolina</p>
+    <p style ="color:rgb(255, 255, 255);text-align:center;">Cilindrada:	2936 cm3 / 179.2 cu-in</p>
+        <p style ="color:rgb(255, 255, 255);text-align:center;">motor V8</p>
+            <p style ="color:rgb(255, 255, 255);text-align:center;">Potência:	478 PS / 471 HP / 352 kW</p>
+                <p style ="color:rgb(255, 255, 255);text-align:center;">Torque:	577.0 Nm / 425 lb-ft</p>
+                    <p style ="color:rgb(255, 255, 255);text-align:center;">Velocidade Máxima:	324 km/h / 201 Mph</p>
+
+            </p>
+            <p style ="color:rgb(255, 255, 255);text-align:center;">
+            Legado:
+            
+            A Ferrari F40 é frequentemente considerada como um dos maiores carros esportivos da história e um ícone da engenharia automotiva.
+            Último Carro Aprovado por Enzo Ferrari:
+            
+            A F40 foi o último carro aprovado pelo próprio Enzo Ferrari antes de sua morte em 1988.
+            </p>
+            <script>
+                function toggleMenu() {
+                var menu = document.querySelector('.menu');
+                var content = document.querySelector('.content');
+                menu.style.width = menu.style.width === '150px' ? '0' : '150px';
+                content.style.marginLeft = content.style.marginLeft === '150px' ? '0' : '150px';
+        }
+            </script>
+        </body>
+

@@ -1,0 +1,71 @@
+<html>
+    <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="ferrari-logon.ico" type="image/x-icon">
+  <title>Formulário</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #F1F1F1;
+          text-align: center;
+      }
+      header {
+          background-color: #9A3B43;
+          color: white;
+          padding: 20px;
+      }
+      h1 {
+          font-size: 36px;
+      }
+      p {
+          font-size: 20px;
+      }
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  </style>
+  <body style="background-image: url(ferrari\ background\ formulario.jpg);">
+    <header>
+      <h2 style ="color:rgb(255, 255, 255);text-align:center;">Formulário</h2>
+      <div class="menu-btn" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <div class="menu">
+        <ul>
+            <br><br><br>
+            <li><a href="index.html"><img src="ferrari_logo_icon_145829-removebg-preview.png" >Pagina inicial</a></li>
+            <br><br><br>
+            <li><a href="ferrari488.html"><img src="ferrari-488.jpg" >488</a></li>
+            <br><br><br>
+            <li><a href="ferrarif40.html"><img src="Ferrari F40.jpg" >F40</a></li>
+            <br><br><br>
+            <li><a href="ferrarisf90.html"><img src="Ferrari-SF90.jpg" >SF90</a></li>
+        </ul>
+    </header>
+        <form>
+            <fieldset>
+                <legend align="center">
+                    <h2 style ="color:rgb(255, 255, 255);text-align:center;">Nova Conta</h2>
+                </legend>
+                    <p style ="color:rgb(255, 255, 255);text-align:center;">Email</p>
+                    <input type="text" name="Nome">
+                <p style ="color:rgb(255, 255, 255);text-align:center;">Password</p>
+                <input type="password" name="pass">
+
+                <br>
+                <input type="submit" value="Submeter" class="enviar">
+            </fieldset>
+        </form>
+    <script>
+        function toggleMenu() {
+        var menu = document.querySelector('.menu');
+        var content = document.querySelector('.content');
+        menu.style.width = menu.style.width === '150px' ? '0' : '150px';
+        content.style.marginLeft = content.style.marginLeft === '150px' ? '0' : '150px';
+}
+</script>
+</html>
+
